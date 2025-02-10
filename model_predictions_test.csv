@@ -1,0 +1,11 @@
+Sample Index,Actual,Logistic Regression,K-Nearest Neighbors,Decision Tree,Random Forest,Support Vector Machine,Gradient Boosting (XGB)
+44,0,1,1,1,1,1,1
+672,0,0,0,0,0,0,0
+700,0,0,0,0,0,0,0
+630,1,0,1,0,0,0,0
+81,0,0,0,0,0,0,0
+389,0,0,0,0,1,0,0
+387,1,1,0,0,0,1,1
+408,1,1,1,0,1,1,1
+163,0,0,0,0,0,0,0
+335,0,1,1,1,1,1,1
