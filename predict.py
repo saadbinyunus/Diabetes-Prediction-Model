@@ -18,9 +18,7 @@ from sklearn.ensemble import GradientBoostingClassifier
 from lightgbm import LGBMClassifier
 from sklearn.model_selection import KFold
 from sklearn.preprocessing import MinMaxScaler
-from sklearn.model_selection import GridSearchCV
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
-from sklearn.model_selection import cross_val_score
+from sklearn.ensemble import VotingClassifier
 
 import warnings
 warnings.simplefilter(action = "ignore") 
@@ -181,18 +179,6 @@ print(results_df.to_string(index=False))  # Print without DataFrame index
 
 results_df.to_csv("model_predictions_test.csv", index=False)
 
-
-# %%
-from sklearn.ensemble import VotingClassifier
-from sklearn.preprocessing import StandardScaler
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
-from sklearn.neighbors import KNeighborsClassifier
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.svm import SVC
-from sklearn.ensemble import GradientBoostingClassifier
 
 # Get the best-tuned models
 rf_best = rf_grid.best_estimator_
